@@ -1,0 +1,4 @@
+SCORES = [
+	"meansquared",
+	"crossentropy",
+]

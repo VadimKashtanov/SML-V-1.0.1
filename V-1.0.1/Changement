@@ -1,0 +1,57 @@
+Au moment de la transition 0.32e -> 1.0 ce fichier contenanit juste ça :
+
+"""
+Je passe enfin a un systeme plus déstructuré.
+
+Je nomme la 1.0 comme la version ou tu as un package dans lequel tu mets toutes les instructions, optimiseurs, genetiques ... comme une liste.
+
+Puis le build_package.py genere un package comme il l'était en version 0.31 par exemple, avec la structure en fichier et non pas en objets.
+
+build_package.py genere a partire de package_prebuild/ un package/
+
+en mode
+
+/package
+    /head
+    /src
+    /py
+        /insts
+            dot1d.py
+        /scores
+            me.py
+    /programs
+        /program0
+            main.py
+
+Les fichier dans le package_prebuild/ doivent respecter les #include path par rapport au package/
+
+Puis je peux Makefile et il va chercher a build un tous les programs dans package_prebuild/programs
+"""
+
+Maintenant apres un peut de reflexion et peut de code, j'ai finalement choisis de simplement changer la structure en 
+
+/paquet   ou faisceau
+    /insts
+
+        /instruction0
+        /instruction1
+
+    /optis
+
+        /opti0
+        /opti1
+
+    /scores
+
+        /score0
+        /score1
+
+    /programs
+
+        /program0
+        /program1
+
+
+
+Side pensés:
+    dot product = produit scalaire = scalarnoie proisvedenie = tchastitchnoe proisvedenie

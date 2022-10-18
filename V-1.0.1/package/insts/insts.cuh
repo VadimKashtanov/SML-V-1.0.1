@@ -1,0 +1,12 @@
+#pragma once
+#include "package/insts/dot1d/head/dot1d.cuh"
+#include "package/insts/dot2d/head/dot2d.cuh"
+#include "package/insts/dot2drecurent/head/dot2drecurent.cuh"
+#include "package/insts/kconvl2d/head/kconvl2d.cuh"
+#include "package/insts/pool2dmax/head/pool2dmax.cuh"
+#include "package/insts/pool2daverage/head/pool2daverage.cuh"
+#include "package/insts/softmax/head/softmax.cuh"
+#include "package/insts/gaussfiltre2d/head/gaussfiltre2d.cuh"
+#include "package/insts/lstm2d/head/lstm2d.cuh"
+#include "package/insts/sum/head/sum.cuh"
+#include "package/insts/activation/head/activation.cuh"
